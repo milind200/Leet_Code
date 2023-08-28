@@ -1,12 +1,9 @@
 class Solution {
-public:
-    string restoreString(string s, vector<int>& indices) {
-        string str(s.size(),'.');
+    public String restoreString(String s, int[] indices) {
+        StringBuilder str =new StringBuilder(s);
         for(int i=0;i<s.length();i++){
-            
-            str[indices[i]]=s[i];
-            
+            str.setCharAt(indices[i],s.charAt(i));
         }
-       return str;
+        return String.valueOf(str);
     }
-};
+}
