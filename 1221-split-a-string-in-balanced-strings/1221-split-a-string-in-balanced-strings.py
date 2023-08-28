@@ -5,10 +5,9 @@ class Solution:
             if i=='L':
                 countl+=1
             else:
-                countr+=1
-            if countl==countr:
+                countr+=-1
+            if countl+countr==0:
                 count+=1
-                countl= countr=0
                
         return count        
         
