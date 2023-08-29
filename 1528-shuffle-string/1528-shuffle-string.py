@@ -1,9 +1,7 @@
-class Solution {
-    public String restoreString(String s, int[] indices) {
-        StringBuilder str =new StringBuilder(s);
-        for(int i=0;i<s.length();i++){
-            str.setCharAt(indices[i],s.charAt(i));
-        }
-        return String.valueOf(str);
-    }
-}
+class Solution:
+    def restoreString(self, s: str, indices: List[int]) -> str:
+        s1=[None]*len(s)
+        for i in range(0,len(s)):
+            s1[indices[i]]=s[i]
+        
+        return ''.join(s1)    
