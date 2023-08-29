@@ -15,7 +15,6 @@ public:
         }
         for(int j=0;j<items.size();j++)
         {
-           // cout<<items[j][i]<<"=="<<ruleValue<<"\n";
             if(items[j][i]==ruleValue)
             {
                 count++;
